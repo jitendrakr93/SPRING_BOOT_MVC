@@ -1,0 +1,14 @@
+package com.jit.boot.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/admin")
+public class AdminController {
+	@RequestMapping("/save")
+	// @RequestMapping("/admin/save")
+	public String saveAdmin() {
+		return "AdminSave";
+	}
+}
